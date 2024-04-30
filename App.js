@@ -1,20 +1,38 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { Style02 } from './class/style-externo';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View
+      style={{
+        width: "auto",
+        flex: 1,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        backgroundColor: "#212121"
+      }}>
+
+      <Text style={Style02.title}>
+          INDMO
+      </Text>
+
+      <Text style={{
+        color: "#39FF70",
+        fontFamily:"Roboto",
+        fontWeight: "bold",
+        fontSize: 50
+        }}>
+          Hello Word
+        </Text>
+
+        <Text style={Style02.pragraphWhite}>
+          Texto com estilo de arquivo externo
+        </Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
