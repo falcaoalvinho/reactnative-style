@@ -1,37 +1,36 @@
 import styled from "styled-components/native";
-import { ImageBackground } from "react-native";
 
-export const Container = styled.ImageBackground`
+export const Container = styled.View `
     background-color: #212121;
-    
-    width: 100%;
+
     padding: 30px;
 
     display: flex;
-    flex: 1;
+    flex: 2;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-`
+`;
 
-export const View = styled.View`
-`
+export const CardContainer = styled.View`
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 
-export const TitleText = styled.Text`
-    font-family: sans-serif;
+    background-color: #d9d9d9;
+`;
+
+export const CardTitle = styled.Text`
+
     font-size: 24px;
     font-weight: 600;
     color: white;
+`;
 
-`
-export const Text = styled.Text`
-    font-family: sans-serif;
+export const CardSubTitle = styled.Text`
     font-size: 16px;
     font-weight: 400;
-    color: #d9d9d9;
-`
-
-export const FlatList = styled(FlatList)`
-    gap: 20px;
-`
+    color: white;
+`;
 

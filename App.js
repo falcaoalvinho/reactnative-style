@@ -1,14 +1,6 @@
-import * as S from "./class-style/styled-external";
-import {CreativeComponent} from "./class-component/native-component"
+import Search from "./type-weather/pages/search";
+import Dash from "./type-weather/pages/dash";
 
 export default function App() {
-    return (
-      <><S.PageContainer>
-        <S.PageTitle>INDMO</S.PageTitle>
-        <S.PageSubTitle>Hello World</S.PageSubTitle>
-      </S.PageContainer>
-      
-      <CreativeComponent></CreativeComponent></>
-    );
+    return <Dash/>;
   }
-
